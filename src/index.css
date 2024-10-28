@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "cursor";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:  'Poppins', 'Raleway', 'Lato', 'Noto Sans';
+    overflow: hidden;
+}
+
+html, Body{
+    background-color: #111;
+    width: 100%;
+    height: 100%;
+}
+
+/* styles.css or a new SCSS file */
+.mf-cursor {
+    background-color: rgba(255, 0, 0, 0.7); /* Customize color */
+    border-radius: 50%; /* Circular cursor */
+    width: 25px; /* Cursor size */
+    height: 25px; /* Cursor size */
+}
