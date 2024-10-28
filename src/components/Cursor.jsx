@@ -1,5 +1,4 @@
 /* eslint-disable no-unused-vars */
-// CustomCursor.jsx
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import PropTypes from 'prop-types';
@@ -10,7 +9,6 @@ const CustomCursor = ({ hover }) => {
     useEffect(() => {
         const cursor = cursorRef.current;
 
-        // Update mouseMoveHandler
         const mouseMoveHandler = (e) => {
             gsap.to(cursor, {
                 duration: 0.5,
@@ -20,7 +18,6 @@ const CustomCursor = ({ hover }) => {
             });
         };
 
-        // Listen for mouse movements
         window.addEventListener('mousemove', mouseMoveHandler);
 
         return () => {
@@ -37,7 +34,7 @@ const CustomCursor = ({ hover }) => {
                 width: `${hover ? "100px" : "20px"}`,
                 height: `${hover ? "100px" : "20px"}`,
                 transition: 'height 0.3s ease-in-out, width 0.3s ease-in-out',
-                backgroundColor: 'white', // Customize your cursor color
+                backgroundColor: 'white',
                 borderRadius: '50%',
                 pointerEvents: 'none',
                 zIndex: 1000,
@@ -48,7 +45,7 @@ const CustomCursor = ({ hover }) => {
 };
 
 CustomCursor.propTypes = {
-    hover: PropTypes.string.isRequired, // Ensure toggle is a required string
+    hover: PropTypes.string.isRequired,
 };
 
 export default CustomCursor;
