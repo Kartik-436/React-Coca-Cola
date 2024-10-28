@@ -147,7 +147,7 @@ const Page1 = () => {
                         <div className="active:scale-95 cursor-pointer bg-red-600 w-32 h-0.5 mx-2"></div>
                         <img 
                             className="h-52 active:scale-95 cursor-pointer ml-5"
-                            src="/Logo1.png"
+                            src={`${import.meta.env.BASE_URL}/Logo1.png`}
                             alt="" 
                         />
                         <div className="active:scale-95 cursor-pointer bg-red-600 w-32 h-0.5 mx-2"></div>
